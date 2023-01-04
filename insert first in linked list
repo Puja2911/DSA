@@ -3,7 +3,7 @@ Class Node{
   int data;
   Node * next;
 }
-void insert_first(int val, Node * head, Node * tail, int size){
+void insert_first(int val, Node * head,int size){
   
   Node * new_node= new Node();
   if(size==0){
