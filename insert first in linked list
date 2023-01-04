@@ -10,14 +10,13 @@ void insert_first(int val, Node * head,int size){
     new_node->data=val;
     head=new_node;
     tail=new_node;
-    size++;
   }
   else{
     new_node->data=val;
     new_node->next=head;
     head=new_node;
-    size++;
   }
+  size++;
 }
   
   
