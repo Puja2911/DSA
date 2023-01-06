@@ -2,7 +2,7 @@ class node{
   public:
   int data;
   node*next;
-}
+};
 void k_reverse(node*head,int k){
     node*prev_head,*prev_tail=NULL;
     node*curr_head,*curr_tail=NULL;
