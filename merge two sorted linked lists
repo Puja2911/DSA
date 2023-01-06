@@ -1,0 +1,27 @@
+class node{
+  public:
+  int data;
+  node*next;
+}
+void merge_ll(node*head_1,node*head_2){
+    node*L1=head_1;
+    node*L2=head_2;
+    while(L1!=NULL && L2!=NULL){
+        if(L1->data<L2->data){
+            cout<<L1->data;
+            L1=L1->next;
+        }
+        else{
+            cout<<L2->data;
+            L2=L2->next;
+        }
+    }
+    while(L1!=NULL){
+        cout<<L1->data;
+        L1=L1->next;
+    }
+    while(L2!=NULL){
+        cout<<L2->data;
+        L2=L2->next;
+    }
+}
