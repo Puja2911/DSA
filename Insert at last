@@ -1,0 +1,16 @@
+Class node{
+   public:
+   int data;
+   node*next;
+};
+void insert_last(int val,node*head,node*tail){
+    node*new_node=new node();
+    node*temp=head;
+    for(int i=0;i<length-1;i++){
+        temp=temp->next;
+    }
+    temp->next=new_node;
+    new_node->next=NULL;
+    tail=new_node;
+}
+    
