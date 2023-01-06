@@ -1,0 +1,13 @@
+class node{
+  public:
+  int data;
+  node*next;
+}
+void length_ll(node*head){
+  node*temp=head;
+  int c=0;
+  while(temp!=NULL){
+    c++;
+    temp=temp->next;
+  }
+}
