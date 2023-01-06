@@ -1,0 +1,19 @@
+class node{
+  public:
+  int data;
+  node*next;
+}
+void reverse_ll(node*head,node*tail){
+    node*prev=NULL;
+    node*current=head;
+    node*temp=NULL;
+    while(current!=NULL){
+        temp=current->next;
+        current->next=prev;
+        prev=current;
+        current=temp;
+    }
+    node*p=head;
+    head=tail;
+    tail=temp;
+}
