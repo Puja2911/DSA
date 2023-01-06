@@ -1,0 +1,28 @@
+class node{
+  public:
+  int data;
+  node*next;
+}
+int add_two_ll(node*head_1,int pv_1,node*head_2,int pv_2){
+  node*head_resultant=NULL;
+  int old_carry,data=0;;
+  if(head_1==NULL && head_2==NULL){
+      return 0;
+  }
+  else if(pv_1>pv_2){
+      old_carry=add_two_ll(head_1->next,pv_1-1,head_2,pv_2);
+      data=head_1->data+oc;
+  }
+  else if(pv-2>pv_1){
+      old_carry=add_two_ll(head_1,pv_1,head_2->next,pv_2-1);
+      data=head_2->data+oc;
+  }
+  else{
+      old_carry=add_two_ll(head_1,pv_1,head_2,pv-2);
+      data=head_1->data+head_2->data+oc;
+  }
+  int next_carry=data/10;
+  int new_data=data%10;
+  
+  
+      
