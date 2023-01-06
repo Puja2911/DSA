@@ -10,7 +10,7 @@ void kth_from_end(node*head,node*head,int k){
       fast=fast->next;
     }
     while(fast!=tail){
-      slow++;
-      fast++;
+      slow=slow->next;
+      fast=fast->next;
     }
 }
