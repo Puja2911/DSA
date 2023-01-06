@@ -1,0 +1,22 @@
+Class node{
+   public:
+   int data;
+   node*next;
+};
+void remove_from_last(node*head,node*tail,int length){
+    node*temp=head;
+    if(length==0){
+       cout<<"invalid argument""<<endl;
+    }
+    else if(length==1){
+       head=NULL;
+       tail=NULL;
+    }
+    else{
+       for(int i=0;i<length-2;i++){
+          temp=temp->next;
+       }
+       tail=temp;
+       temp->next=NULL;
+    }
+}
