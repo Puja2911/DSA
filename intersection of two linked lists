@@ -2,7 +2,7 @@ class node{
    public:
    int data;
    node*next;
-}
+};
 void intersection_ll(node*head_1,node*head_2){
     intd;
     int len_1=int length_ll(head_1);
