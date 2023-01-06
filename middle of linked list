@@ -1,0 +1,14 @@
+class node{
+  public:
+  int data;
+  node*next;
+}
+void middle_ll(node*head){
+    node*slow=head;
+    node*fast=head;
+    while(fast->next!=NULL && fast->next->!=NULL){
+        slow=slow->next;
+        fast=fast->next->next;
+    }
+    cout<<slow->data<<endl;
+}
