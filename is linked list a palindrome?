@@ -1,0 +1,25 @@
+class node{
+  public:
+  int data;
+  node*next;
+};
+node*pleft;
+bool ispalindromehelper(node*right){
+    if(right==NULL){
+        return true;
+    }
+    bool rres=ispalindromhelper(right->next);
+    if(rres==false){
+      return false;
+    }
+    else if(pleft->data!=right->data){
+      return false;
+    }
+    else{
+      pleft=pleft-.next;
+      return true;
+    }
+bool ispalindrome(){
+    pleft=head;
+    return ispalindromehelper(head)
+}
