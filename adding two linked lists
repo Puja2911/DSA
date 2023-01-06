@@ -2,7 +2,7 @@ class node{
   public:
   int data;
   node*next;
-}
+};
 int add_helper(node*head_1,int pv_1,node*head_2,int pv_2,head_resultant){
   
   int old_carry,data=0;;
