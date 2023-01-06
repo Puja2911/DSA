@@ -5,6 +5,17 @@ Class node{
 };
 void insert_at_index(int val,int index,node*head){
    node*new_node=new node();
+   node*temp=head;
    if(index==0){
+        void insert_first(val,head);
+   }
+   else if(index=length){
+         new_node->data=val;
+         for(int i=0;i<length-1;i++){
+            temp=temp->next;
+         }
+         temp->next=new_node;
+         new_node->next=NULL;
+    
       
    
