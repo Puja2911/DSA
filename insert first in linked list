@@ -3,11 +3,12 @@ Class Node{
   int data;
   Node * next;
 }
-void insert_first(int val, Node * head,int size){
+void insert_first(int val, Node * head){
   
   Node * new_node= new Node();
-  if(size==0){
+  if(head==NULL){
     new_node->data=val;
+    new_node->next=NULL;
     head=new_node;
     tail=new_node;
   }
@@ -16,7 +17,7 @@ void insert_first(int val, Node * head,int size){
     new_node->next=head;
     head=new_node;
   }
-  size++;
+  
 }
   
   
