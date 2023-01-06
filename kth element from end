@@ -2,7 +2,7 @@ class node{
   public:
   int data;
   node*next;
-}
+};
 void kth_from_end(node*head,node*head,int k){
     node*slow=head;
     node*fast=head;
