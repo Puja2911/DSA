@@ -1,0 +1,37 @@
+class node{
+  public:
+  int data;
+  node*next;
+}
+void k_reverse(node*head,int k){
+    node*prev_head,*prev_tail=NULL;
+    node*curr_head,*curr_tail=NULL;
+    if(length>=k){
+      node*temp=head;
+      for(int i=0;i<k;i++){
+          int val=temp->data;
+          temp=temp->next;
+          remove_first(head);
+          insert_first(val,curr);
+      }
+      if(prev==NULL){
+          temp=curr;
+          while(temp!=NULL){
+            insert_last(val,prev);
+          }
+      }
+      else{
+          prev_tail->next=curr_head;
+          prev_tail=curr_tail;
+      }
+    }
+    else{
+      node*temp=head;
+      for(int i=0;i<length;i++){
+          int val=temp->data;
+          temp=temp->next;
+          remove_first(head);
+          insert_last(val,curr);
+      }
+    }
+    
