@@ -2,7 +2,7 @@ class node{
   public:
   int data;
   node*next;
-}
+};
 void merge_ll(node*head_1,node*head_2){
     node*L1=head_1;
     node*L2=head_2;
