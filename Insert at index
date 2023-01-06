@@ -1,0 +1,10 @@
+Class node{
+   public:
+   int data;
+   node*next;
+};
+void insert_at_index(int val,int index,node*head){
+   node*new_node=new node();
+   if(index==0){
+      
+   
