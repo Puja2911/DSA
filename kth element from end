@@ -13,4 +13,5 @@ void kth_from_end(node*head,node*head,int k){
       slow=slow->next;
       fast=fast->next;
     }
+    cout<<slow->data<<endl;
 }
