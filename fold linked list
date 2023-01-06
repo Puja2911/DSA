@@ -1,0 +1,27 @@
+class node{
+  public:
+  int data;
+  node*next;
+};
+void foldhelper(node*right,int floor){
+    if(right==NULL){
+      return;
+    }
+    foldhelper(right->next,floor+1);
+    if(floor>size/2){
+      node*temp=fleft->next;
+      fleft->next=right;
+      right->next=temp;
+      fleft=temp;
+    }
+    else if(floor==size/2){
+      tail=right;
+      tail->next=NULL;
+    }
+   
+}
+node*fleft;
+void fold(){
+  fleft=head;
+  foldhelper(head,0):
+}
