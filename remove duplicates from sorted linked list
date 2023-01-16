@@ -20,6 +20,6 @@ node* removeduplicate(node* head){
       curr=curr->next;
     }
   }
-  itr->next=NULL;
+  
   return temp->next;
 }
