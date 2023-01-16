@@ -1,0 +1,35 @@
+Class node{
+  public:
+  int data;
+  node*next;
+};
+node* sortedmerge(node* a,node* b){
+  node*result=NULL;
+  if(a==NULL){
+    return b;
+  }
+  else if(b==NULL){
+    return a;
+  }
+  if(a->data<=b->data){
+    result=a;
+    result->next=sortedmerge(a->next,b);
+  }
+  else{
+    result=b;
+    result->next=sortedmerge(a,b->next);
+  }
+  return result;
+}
+node*mergeklists(node*arr[],int si,int ei){
+  if(si>ei){
+    return NULL;
+  }
+  if(si==ei){
+    return arr[si];
+  }
+  int mid=(si+ei)/2;
+  node* l1=mergeklists(arr,si,mid);
+  node* l2=mergeklists(arr,mid+1,ei);
+  return sortedmerge(l1,l2);
+}
