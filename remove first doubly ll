@@ -1,0 +1,22 @@
+class node{
+  public:
+  int data;
+  node*next;
+  node*prev;
+};
+node*removefirst(node*head,node*tail){
+  if(head==NULL){
+    return head;
+  }
+  else if(head->next==NULL){
+    head=NULL;
+    tail=NULL;
+    return head;
+  }
+  else{
+    node*temp=head->next;
+    temp->prev=NULL;
+    head->next=NULL;
+    head=temp;
+    return head;
+  }
