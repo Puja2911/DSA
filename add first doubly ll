@@ -1,0 +1,21 @@
+Class node:
+  public:
+  int data;
+  node*next;
+  node*prev;
+};
+node* addfirst(node*head,node*tail,int val){
+  if(head==NULL){
+    node* newnode=new node(val);
+    newnode->prev=NULL;
+    newnode->next=NULL;
+    head=newnode;
+    tail=newnode;
+  }
+  else{
+    node* newnode=new node(val);
+    newnode->next=head;
+    head->prev=newnode;
+    head=head->prev;
+  }
+}
