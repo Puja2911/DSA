@@ -1,0 +1,26 @@
+class node{
+  public:
+  int data;
+  node*prev;
+  node*next;
+}
+int getfirst(node*head){
+  if(head==NULL){
+    return NULL;
+  }
+  else{
+    return head->data;
+  }
+}
+int getlast(node*head){
+  if(head==NULL){
+   return NULL;
+  }
+  else{
+    node*temp=head;
+    while(temp->next!=NULL){
+      temp=temp->next;
+    }
+    return temp->data;
+  }
+}
